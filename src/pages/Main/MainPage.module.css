@@ -1,0 +1,59 @@
+.hero {
+    height: 620px;
+    background-image: url(../../assets/images/hero-image-background.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 629px 593px;
+}
+
+.heroText {
+    width: 534px;
+    word-wrap: break-word;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 20px;
+}
+
+.manOnTheBench {
+    margin-top: 50px;
+    height: 576px;
+    background-image: url(../../assets/images/man-on-the-bench.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.tariffCardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    padding-bottom: 118px;
+}
+
+@media (max-width: 1319px) {
+    .hero {
+        height: 710px;
+        background-position: bottom left;
+        background-size: auto 327px;
+    }
+    
+    .heroText {
+        width: 327px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .manOnTheBench {
+        height: 377px;
+        background-size: 820px 393px;
+        margin-top: 30px;
+    }
+
+    .tariffCardsContainer {
+        padding-top: 37px;
+        padding-bottom: 43px;
+        gap: 43px;
+        justify-content: center;
+    }
+}

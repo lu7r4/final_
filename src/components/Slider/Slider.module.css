@@ -1,0 +1,22 @@
+.sliderContainer {
+    height: 265px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.sliderController {
+    display: flex;
+    align-items: center;
+}
+
+.mySwiper {
+    padding: 0 20px;
+}
+
+@media (max-width: 1319px) {
+    .sliderContainer {
+        height: 320px;
+    }
+}

@@ -1,0 +1,29 @@
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 49px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbar__link:hover {
+  color: #029491;
+}
+
+@media (max-width: 1319px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    margin-top: 36px;
+  }
+  .navbar__link {
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}

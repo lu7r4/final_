@@ -1,0 +1,57 @@
+.registerBtn {
+  text-decoration: none;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.registerBtn:hover {
+  opacity: 1;
+}
+
+.line {
+  background-color: #029491;
+  height: 26px;
+  width: 2px;
+  border: none;
+  opacity: 0.6;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.signInBtn {
+  background-color: #7ce3e1;
+  padding: 5px 12px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+}
+
+.signInBtn:hover {
+  background-color: #029491;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1319px) {
+  .registerBtn {
+    align-self: center;
+    color: #fff;
+    margin-top: 75px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .signInBtn {
+    margin-top: 20px;
+    width: 295px;
+    height: 52px;
+    align-self: center;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

@@ -1,0 +1,19 @@
+.documents {
+    display: flex;
+    flex-direction: column;
+    margin-top: 58px;
+    margin-bottom: 109px;
+}
+
+.documentsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1319px) {
+    .documents {
+        margin-top: 34px;
+        margin-bottom: 57px;
+    }
+}

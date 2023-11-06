@@ -1,0 +1,174 @@
+.header {
+  background-color: #fff;
+  height: 93px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 401px;
+}
+
+.authorizationButtons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.authorizedUser {
+  display: flex;
+  gap: 6px;
+}
+
+.limits {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(217, 217, 217, 0.3);
+  border-radius: 5px;
+  width: 195px;
+  height: 63px;
+}
+
+.limit {
+  font-size: 10px;
+  line-height: 12px;
+  opacity: 0.4;
+}
+
+.accountInfo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 9px;
+}
+
+.companiesUsed,
+.companyLimit {
+  font-weight: 700;
+  opacity: 1;
+}
+
+.companyLimit {
+  color: #8ac540;
+}
+
+.loader {
+  color: #000;
+  opacity: 0.5;
+  font-size: 3px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  animation: mulShdSpin 1.3s infinite linear;
+  transform: translateZ(0);
+}
+
+.burgerMenu {
+  display: none;
+}
+
+@keyframes mulShdSpin {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0,
+      0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em,
+      0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em,
+      0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em,
+      0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+
+@media (max-width: 1319px) {
+  .authorizationButtons {
+    display: none;
+  }
+  
+  .accountInfo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .burgerMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .burderLine {
+    width: 30px;
+    height: 5px;
+    background-color: #029491;
+    outline: none;
+    border: none;
+  }
+
+  .menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #029491;
+    z-index: 999;
+  }
+
+  .menuContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .menuHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 93px;
+  }
+
+  .authorizedUser {
+    align-items: center;
+  }
+
+  .limits {
+    justify-content: center;
+    width: 123px;
+    height: 75px;
+  }
+
+  .limit {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
